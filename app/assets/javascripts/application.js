@@ -25,6 +25,7 @@
 //= require contact_us
 //= require sign_up
 //= require reviews
+//= require jqcloud
 
 $(document).ready(function() {
 	$('.professor_link').bind('ajax:success', function(xhr, data, status) {
