@@ -1,6 +1,8 @@
 class Semester < ActiveRecord::Base
   has_many :courses, :through => :course_semesters
 
+  #Returns: int
+  #returns the lou's list semester identification number
   def self.get_number(params)
     num = 1090 + 10*(params[:semester_year].to_i - 2009)
       

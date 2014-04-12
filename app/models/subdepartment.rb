@@ -4,6 +4,8 @@ class Subdepartment < ActiveRecord::Base
 
   validates_presence_of :name, :mnemonic
 
+  #Returns: Array[professor]
+  #returns a list of all of the professors in a subdepartment with no particular sorting.
   def professors_list
     profs = []
     self.courses.each do |course|
