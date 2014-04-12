@@ -1,13 +1,9 @@
-%link{href: "assets/fullcalendar.css", rel: "stylesheet", type: "text/css"}/
 %script{src: "assets/fullcalendar.js", type: "text/javascript"}
-:javascript
-  $(document).ready(function() {
-  
-      // page is now ready, initialize the calendar...
-  
-      $('#calendar').fullCalendar({
-          // put your options and callbacks here
-      })
-  
-  });
-#calendar
+%link{href: "assets/fullcalendar.css", rel: "stylesheet", type: "text/css"}
+%link{href: "assets/scheduler.css", rel: "stylesheet", type: "text/css"}
+%body
+  #schedule
+  #search-bar
+    %h2 Class Search
+    %input#class-search{name: "class-search", type: "text"}/
+%script{src: "assets/scheduler.js", type: "text/javascript"}
