@@ -13,16 +13,6 @@
 
 ActiveRecord::Schema.define(version: 20140411235037) do
 
-  create_table "course_sections", force: true do |t|
-    t.integer  "course_id"
-    t.integer  "professor_id"
-    t.string   "days"
-    t.integer  "start_Time"
-    t.integer  "end_time"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "course_semesters", force: true do |t|
     t.integer  "course_id"
     t.integer  "semester_id"
