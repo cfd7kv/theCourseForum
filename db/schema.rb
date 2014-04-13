@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140413050730) do
+ActiveRecord::Schema.define(version: 20140413053411) do
 
   create_table "course_sections", force: true do |t|
     t.integer  "course_id"
@@ -105,11 +105,6 @@ ActiveRecord::Schema.define(version: 20140413050730) do
     t.datetime "updated_at"
   end
 
-  create_table "locations_sections", id: false, force: true do |t|
-    t.integer "location_id"
-    t.integer "section_id"
-  end
-
   create_table "majors", force: true do |t|
     t.string   "name"
     t.datetime "created_at", null: false
@@ -190,6 +185,7 @@ ActiveRecord::Schema.define(version: 20140413050730) do
     t.datetime "created_at",         null: false
     t.datetime "updated_at",         null: false
     t.string   "section_type"
+    t.integer  "location_id"
   end
 
   add_index "sections", ["course_semester_id"], name: "index_sections_on_course_semester_id", using: :btree
