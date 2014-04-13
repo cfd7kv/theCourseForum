@@ -44,11 +44,18 @@ end
 # Use ActiveModel has_secure_password
 gem 'bcrypt-ruby', '~> 3.0.0'
 
-# Pry for debugging in development and test
 group :development, :test do
+  # Pry for debugging in development and test
   gem 'pry'
   gem 'pry-nav'
+  # mailcatcher to simulate emails
   gem 'mailcatcher'
+  # rspec testing framework
+  gem 'rspec-rails'
+  # priscilla for easy debug messages
+  gem 'priscilla'
+  # capybara for web simulation in tests
+  gem 'capybara'
 end
 
 # Use unicorn as the app server
